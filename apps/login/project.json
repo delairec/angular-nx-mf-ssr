@@ -1,6 +1,6 @@
 {
   "name": "login",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/login/src",
   "prefix": "angular-nx-mf-ssr",
@@ -28,7 +28,7 @@
             {
               "type": "initial",
               "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumError": "4mb"
             },
             {
               "type": "anyComponentStyle",
@@ -96,7 +96,7 @@
       }
     },
     "serve-static": {
-      "executor": "@nrwl/angular:file-server",
+      "executor": "@nrwl/web:file-server",
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "login:build",
